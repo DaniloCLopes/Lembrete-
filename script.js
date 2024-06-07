@@ -12,7 +12,16 @@ button.addEventListener('click', function() {
         const newTask = document.createElement('li');
         newTask.textContent = taskText; 
 
-        
+        //marca como concluida
+        newTask.addEventListener('click', function(){
+            newTask.classList.toggle('completed')
+        });
+
+        const deleteButton = document.createElement('button');
+        deleteButton.textContent = 'Remover';
+        deleteButton.addEventListener('click', function(){
+
+        });
     }
 
-})
+});
