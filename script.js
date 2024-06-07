@@ -29,3 +29,18 @@ button.addEventListener('click', function() {
     }
 
 });
+
+window.addEventListener('load', function() {
+    var audio = document.getElementById('audio');
+    audio.play().catch(function(e) {
+        console.log('Reprodução automática de áudio foi bloqueada pelo navegador:', e);
+        document.getElementById('playButton').style.display = 'block';
+    });
+});
+
+document.getElementById('playButton').addEventListener('click', function() {
+    var audio = document.getElementById('audio');
+    audio.play().catch(function(e) {
+        console.log('Erro ao tentar reproduzir o áudio:', e);
+    });
+});

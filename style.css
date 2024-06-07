@@ -81,6 +81,62 @@ li{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative; 
+    animation: borderRotate 4s linear infinite;
+}
+
+@keyframes borderRotate {
+    0% {
+        border-color: #ff4950 transparent transparent transparent;
+    }
+    6.25% {
+        border-color: #ff4950 #ff4950 transparent transparent;
+    }
+    12.5% {
+        border-color: transparent #ff4950 transparent transparent;
+    }
+    18.75% {
+        border-color: transparent #ff4950 #ff4950 transparent;
+    }
+    25% {
+        border-color: transparent transparent #ff4950 transparent;
+    }
+    31.25% {
+        border-color: transparent transparent #ff4950 #ff4950;
+    }
+    37.5% {
+        border-color: transparent transparent transparent #ff4950;
+    }
+    43.75% {
+        border-color: #ff4950 transparent transparent #ff4950;
+    }
+    50% {
+        border-color: #ff4950 transparent transparent transparent;
+    }
+    56.25% {
+        border-color: #ff4950 #ff4950 transparent transparent;
+    }
+    62.5% {
+        border-color: transparent #ff4950 transparent transparent;
+    }
+    68.75% {
+        border-color: transparent #ff4950 #ff4950 transparent;
+    }
+    75% {
+        border-color: transparent transparent #ff4950 transparent;
+    }
+    81.25% {
+        border-color: transparent transparent #ff4950 #ff4950;
+    }
+    87.5% {
+        border-color: transparent transparent transparent #ff4950;
+    }
+    93.75% {
+        border-color: #ff4950 transparent transparent #ff4950;
+    }
+    100% {
+        border-color: #ff4950 transparent transparent transparent;
+    }
 }
 
 #task-list > li > button{
@@ -90,4 +146,5 @@ li{
     background-color: #ff4950;
     border: 1px solid #ff4950;
     color: #212332;
+    cursor: pointer;
 }
