@@ -11,6 +11,7 @@ body {
 }
 h1{
     color: #ff4950;
+    
 }
 #task-list {
     list-style-type: none;
@@ -29,7 +30,7 @@ h1{
 #new-task::placeholder {
     color: #ff4950;
     background-color: #212332;
-    border: 1px solid #ff4950;
+    
     
 }
 #add-task{
