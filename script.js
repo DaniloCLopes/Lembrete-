@@ -20,8 +20,12 @@ button.addEventListener('click', function() {
         const deleteButton = document.createElement('button');
         deleteButton.textContent = 'Remover';
         deleteButton.addEventListener('click', function(){
-
+            list.removeChild(newTask);
         });
+
+        newTask.appendChild(deleteButton);
+        list.appendChild(newTask);
+        input.value = '';
     }
 
 });
